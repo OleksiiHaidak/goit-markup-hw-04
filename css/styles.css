@@ -494,6 +494,7 @@ body {
 .customers-list-link:hover,
 .customers-list-link:focus {
     border: 1px solid #404bbf;
+    color: #404bbf;
 }
 
  .customers-list-icon:hover ,
