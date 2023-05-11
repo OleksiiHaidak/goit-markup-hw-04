@@ -198,9 +198,10 @@ body {
 .page-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--accent-color);
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -291,10 +292,6 @@ body {
     width: 264px;
 }
 
-.title-of-section {
-    margin-top: 8px;
-}
-
 .section-what-are-we-doing {
     padding-bottom: 120px;
 }
@@ -320,6 +317,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding: 32px 0;
 }
 
 .employees-card {
@@ -331,7 +329,7 @@ body {
 }
 
 .employees-content-card-wrapper {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .section-name-title {
@@ -420,6 +418,7 @@ body {
     display: flex;
     width: 264px;
     height: 112px;
+    margin-bottom: 8px;
     background-color: var(--accent-light-color);
     border-radius: 4px;
     justify-content: center;
@@ -463,6 +462,7 @@ body {
 
 .section-title-customers {
     margin-bottom: 72px;
+    line-height: 1.1;
 }
 
 .customers-list {
@@ -493,12 +493,12 @@ body {
 
 .customers-list-link:hover,
 .customers-list-link:focus {
-    border: 1px solid var(--accent-dark-blue-color);
+    border: 1px solid #404bbf;
 }
 
  .customers-list-link:hover .customers-list-icon,
  .customers-list-link:focus .customers-list-icon {
-    fill: var(--accent-dark-blue-color);
+    fill: #404bbf;
 }
 
 .footer-social-list {
@@ -509,12 +509,20 @@ body {
 
 .footer-wrapper {
     display: flex;
+    align-items: baseline;
     justify-content: flex-start;
-    gap: 120px;
+    /* gap: 120px; */
+}
+
+.footer-title-wrapper {
+    margin-right: 120px;
 }
 
 .social-media-title {
     margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer-social-list-wrapper {
